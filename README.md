@@ -13,6 +13,8 @@ Subjects for later
 # Attendance Coin is class cash
 it is a ERC20 Token, Fungible
 
+https://github.com/ConsenSys/Tokens/blob/master/contracts/eip20/EIP20.sol
+
 # Class Badge
 it is a ERC721 Token, Collectible
 
