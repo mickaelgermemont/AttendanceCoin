@@ -36,7 +36,7 @@ We could implement that. see DelegateCall.com - Fully Blockchain based Q&A. Earn
 
 # Join our Slack:
 - http://bit.ly/LinniaProtocolSlack
-Join #attendance_coin channel
+Join #attendance-coin-msg channel
 
 # Must do
 
