@@ -1,3 +1,9 @@
+# Must do
+
+- post issues
+- share thoughtfull comments
+- interact with the contract on https://remix.ethereum.org/
+
 # AttendanceCoin
 
 MVP Sucess rules for next week (August 13th 2018)
