@@ -9,6 +9,7 @@ MVP Sucess rules for next week (August 13th 2018)
 Subjects for later
 - how to make it worthwhile to own? 
 - worthwhile because i can show it to employers? 
+- worthwhile because i can use it to attend a meetup even if its full
 - what do you do with the coin? trade it for an interview?
 - multisignature?
 
