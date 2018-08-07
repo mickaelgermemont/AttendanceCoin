@@ -23,6 +23,8 @@ it is a ERC721 Token, Collectible
 
 - could help build a leaderboard based on dapps created
 
+https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/contracts/token/ERC721/ERC721Token.sol
+
 # Blog / Steemit
 
 We could implement that. see DelegateCall.com - Fully Blockchain based Q&A. Earn tokens for answering questions.
