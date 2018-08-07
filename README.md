@@ -21,6 +21,10 @@ it is a ERC721 Token, Collectible
 
 - could help build a leaderboard based on dapps created
 
+# Blog / Steemit
+
+we could implement that. see DelegateCall.com - Fully Blockchain based Q&A. Earn tokens for answering questions.
+
 # DAO / Governance / Voting
 
 - could help build a leaderboard based on dapps created
