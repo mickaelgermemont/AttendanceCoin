@@ -12,6 +12,7 @@ Subjects for later
 - worthwhile because i can use it to attend a meetup even if its full??
 - what do you do with the coin? trade it for an interview?
 - multisignature?
+- use voting mechanism to add attibutes
 
 # Attendance Coin is Class Cash
 it is a ERC20 Token, Fungible
@@ -42,4 +43,3 @@ Join #attendance_coin channel
 - post issues
 - share thoughtfull comments
 - interact with the contract on https://remix.ethereum.org/
-- use voting mechanism to add attibutes
