@@ -4,12 +4,11 @@ pragma solidity ^0.4.24;
 // ----------------------------------------------------------------------------
 // 1B FIXED Supply Token contract
 //
-// Symbol      : ACCCC
-// Name        : Attendance Class Contribution Coin Cash
+// Symbol      : AC
+// Name        : Attendance Coin
 // Total supply: 1,000,000,000.000000000000000000
 // Decimals    : 18
 //
-// Enjoy.
 //
 // (c) BokkyPooBah / Bok Consulting Pty Ltd 2018. The MIT Licence.
 // nyc-blockchain-devs.slack.com contributors
