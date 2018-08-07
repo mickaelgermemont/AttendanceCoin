@@ -7,8 +7,8 @@ MVP Sucess rules for next week (August 13th 2018)
 - distribution? to people who submitted issue or commented in issues on github? active on the slack also gets rewards?
 
 Subjects for later
-- how to make it worthwhile to own? 
-- worthwhile because i can show it to employers? 
+- how to make it worthwhile to own?
+- worthwhile because i can show it to employers?
 - worthwhile because i can use it to attend a meetup even if its full??
 - what do you do with the coin? trade it for an interview?
 - multisignature?
@@ -19,13 +19,13 @@ it is a ERC20 Token, Fungible
 
 https://github.com/ConsenSys/Tokens/blob/master/contracts/eip20/EIP20.sol
 
-contract available on rinkeby 0x2e3678052ca9078b29c7aea9b41b48148d732841
+contract available on rinkeby 0x05e710afeebe27972e45f75aca2d16ec2c698f45
 
 contract source code, see ethereum/contract/attendancecoin-erc20.sol
 
 founders pool, sent 333333333 to 0x8fb092b0c5d80d1f4a1a0ff17d5a638afe24cfce
 
-founders pool, sent 333333333 to 0x22323121a5ba2bf4d429d64b83c0ef943d760103 
+founders pool, sent 333333333 to 0x22323121a5ba2bf4d429d64b83c0ef943d760103
 
 # Class Badge
 it is a ERC721 Token, Collectible
