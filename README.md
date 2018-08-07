@@ -13,7 +13,7 @@ Subjects for later
 - what do you do with the coin? trade it for an interview?
 - multisignature?
 
-# Attendance Coin is class cash
+# Attendance Coin is Class Cash
 it is a ERC20 Token, Fungible
 
 https://github.com/ConsenSys/Tokens/blob/master/contracts/eip20/EIP20.sol
@@ -25,11 +25,15 @@ it is a ERC721 Token, Collectible
 
 # Blog / Steemit
 
-we could implement that. see DelegateCall.com - Fully Blockchain based Q&A. Earn tokens for answering questions.
+We could implement that. see DelegateCall.com - Fully Blockchain based Q&A. Earn tokens for answering questions.
 
 # DAO / Governance / Voting
 
 - could help build a leaderboard based on dapps created
+
+# Join our Slack:
+- http://bit.ly/LinniaProtocolSlack
+Join #attendance_coin channel
 
 # Must do
 
@@ -37,4 +41,3 @@ we could implement that. see DelegateCall.com - Fully Blockchain based Q&A. Earn
 - share thoughtfull comments
 - interact with the contract on https://remix.ethereum.org/
 - use voting mechanism to add attibutes
-- join the slack https://linnia-protocol-devs.slack.com/ and join the channel #attendance_coin
