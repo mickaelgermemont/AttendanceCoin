@@ -20,8 +20,12 @@ it is a ERC20 Token, Fungible
 https://github.com/ConsenSys/Tokens/blob/master/contracts/eip20/EIP20.sol
 
 contract available on rinkeby 0x2e3678052ca9078b29c7aea9b41b48148d732841
+
 contract source code, see ethereum/contract/attendancecoin-erc20.sol
-founders pool, sent 333333333 to 0x8fb092b0c5d80d1f4a1a0ff17d5a638afe24cfce and sent 333333333 to 0x22323121a5ba2bf4d429d64b83c0ef943d760103 
+
+founders pool, sent 333333333 to 0x8fb092b0c5d80d1f4a1a0ff17d5a638afe24cfce
+
+founders pool, sent 333333333 to 0x22323121a5ba2bf4d429d64b83c0ef943d760103 
 
 # Class Badge
 it is a ERC721 Token, Collectible
