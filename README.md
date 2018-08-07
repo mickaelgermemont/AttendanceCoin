@@ -1,8 +1,3 @@
-# Must do
-
-- post issues
-- share thoughtfull comments
-- interact with the contract on https://remix.ethereum.org/
 
 # AttendanceCoin
 
@@ -35,3 +30,8 @@ we could implement that. see DelegateCall.com - Fully Blockchain based Q&A. Earn
 
 - could help build a leaderboard based on dapps created
 
+# Must do
+
+- post issues
+- share thoughtfull comments
+- interact with the contract on https://remix.ethereum.org/
