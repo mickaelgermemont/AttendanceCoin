@@ -3,7 +3,7 @@
 MVP Sucess rules for next week (August 13th 2018)
 - a contract
 - deploy on testnet
-- distribution? to people who submitted issue or commented in issues on github?
+- distribution? to people who submitted issue or commented in issues on github? active on the slack also gets rewards?
 
 Subjects for later
 - how to make it worthwhile to own? 
@@ -20,4 +20,8 @@ https://github.com/ConsenSys/Tokens/blob/master/contracts/eip20/EIP20.sol
 it is a ERC721 Token, Collectible
 
 - could help build a leaderboard based on dapps created
-- 
+
+# DAO / Governance / Voting
+
+- could help build a leaderboard based on dapps created
+
