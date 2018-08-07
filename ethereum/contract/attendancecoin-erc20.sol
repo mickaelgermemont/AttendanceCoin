@@ -115,8 +115,8 @@ contract FixedSupplyToken is ERC20Interface, Owned {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "ACCCC";
-        name = "Attendance Class Contribution Coin Cash";
+        symbol = "AC";
+        name = "Attendance Coin";
         decimals = 18;
         _totalSupply = 1000000000 * 10**uint(decimals);
         balances[owner] = _totalSupply;
