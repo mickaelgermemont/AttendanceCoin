@@ -40,3 +40,4 @@ Join #attendance_coin channel
 - post issues
 - share thoughtfull comments
 - interact with the contract on https://remix.ethereum.org/
+- use voting mechanism to add attibutes
