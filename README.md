@@ -37,3 +37,4 @@ we could implement that. see DelegateCall.com - Fully Blockchain based Q&A. Earn
 - share thoughtfull comments
 - interact with the contract on https://remix.ethereum.org/
 - use voting mechanism to add attibutes
+- join the slack https://linnia-protocol-devs.slack.com/ and join the channel #attandence_coin
