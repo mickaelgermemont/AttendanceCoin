@@ -42,10 +42,10 @@ We could implement that. see DelegateCall.com - Fully Blockchain based Q&A. Earn
 
 - could help build a leaderboard based on dapps created
 
-# Join Trello:
-- http://trello.com/attendancecoin
+# Join Trello
+- https://trello.com/b/uiZK8rcn/attendancecoin
 
-# Join our Slack:
+# Join our Slack
 - http://bit.ly/LinniaProtocolSlack
 Join #attendance-coin-msg channel
 
