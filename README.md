@@ -44,7 +44,7 @@ We could implement that. see DelegateCall.com - Fully Blockchain based Q&A. Earn
 
 # Join Trello
 - click here to request access https://trello.com/invite/attendancecoin/59709ded0e3b3b30cc6ba057fb568b6a
-- https://trello.com/b/uiZK8rcn/attendancecoin
+- https://trello.com/attendancecoin
 
 # Join our Slack
 - http://bit.ly/LinniaProtocolSlack
