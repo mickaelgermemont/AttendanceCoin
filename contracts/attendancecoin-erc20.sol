@@ -179,7 +179,7 @@ contract FixedSupplyToken is ERC20Interface, Owned {
     // ------------------------------------------------------------------------
     function transferFrom(address from, address to, uint tokens) public returns (bool success) {
         balances[from] = balances[from].sub(tokens);
-        allowed[from][to] = allowed[from][to].sub(tokens);
+        allowed[from][msg.sender] = allowed[from][msg.sender].sub(tokens);
         balances[to] = balances[to].add(tokens);
         emit Transfer(from, to, tokens);
         return true;
@@ -221,37 +221,5 @@ contract FixedSupplyToken is ERC20Interface, Owned {
     // ------------------------------------------------------------------------
     function transferAnyERC20Token(address tokenAddress, uint tokens) public onlyOwner returns (bool success) {
         return ERC20Interface(tokenAddress).transfer(owner, tokens);
-    }
-}
-
-contract AttendanceCoinExtention1 {
-
-    FixedSupplyToken tokenAddress;
-
-    uint public lastID;
-    mapping(uint => address) public idToAddress;
-    mapping(address => uint) public addressToId;
-
-    // ------------------------------------------------------------------------
-    // Constructor
-    // ------------------------------------------------------------------------
-    constructor(FixedSupplyToken _tokenAddress) public {
-        tokenAddress = _tokenAddress;
-    }
-
-    function balanceOf(address balanceOf) public view returns (uint balance) {
-        return tokenAddress.balanceOf(balanceOf);
-    }
-
-    function assignId(address _address) public {
-        if (addressToId[_address] == 0){
-            idToAddress[++lastID] = _address;
-            addressToId[_address] = lastID;
-        }
-    }
-
-    function transferFrom(address from, address to, uint tokens) public returns (bool success) {
-        assignId(to);
-        return tokenAddress.transferFrom(from, to, tokens);
     }
 }
