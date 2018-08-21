@@ -96,10 +96,10 @@ contract Owned {
 
 
 // ----------------------------------------------------------------------------
-// ERC20 Token, with the addition of symbol, name and decimals and a
-// fixed supply
+// ERC20 Token, with the addition of symbol, name and decimals and a fixed supply
+//
 // ----------------------------------------------------------------------------
-contract FixedSupplyToken is ERC20Interface, Owned {
+contract AttendanceCoin is ERC20Interface, Owned {
     using SafeMath for uint;
 
     string public symbol;
@@ -154,21 +154,6 @@ contract FixedSupplyToken is ERC20Interface, Owned {
 
 
     // ------------------------------------------------------------------------
-    // Token owner can approve for `spender` to transferFrom(...) `tokens`
-    // from the token owner's account
-    //
-    // https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md
-    // recommends that there are no checks for the approval double-spend attack
-    // as this should be implemented in user interfaces
-    // ------------------------------------------------------------------------
-    function approve(address spender, uint tokens) public returns (bool success) {
-        allowed[msg.sender][spender] = tokens;
-        emit Approval(msg.sender, spender, tokens);
-        return true;
-    }
-
-
-    // ------------------------------------------------------------------------
     // Transfer `tokens` from the `from` account to the `to` account
     //
     // The calling account must already have sufficient tokens approve(...)-d
@@ -182,6 +167,21 @@ contract FixedSupplyToken is ERC20Interface, Owned {
         allowed[from][msg.sender] = allowed[from][msg.sender].sub(tokens);
         balances[to] = balances[to].add(tokens);
         emit Transfer(from, to, tokens);
+        return true;
+    }
+
+
+    // ------------------------------------------------------------------------
+    // Token owner can approve for `spender` to transferFrom(...) `tokens`
+    // from the token owner's account
+    //
+    // https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md
+    // recommends that there are no checks for the approval double-spend attack
+    // as this should be implemented in user interfaces
+    // ------------------------------------------------------------------------
+    function approve(address spender, uint tokens) public returns (bool success) {
+        allowed[msg.sender][spender] = tokens;
+        emit Approval(msg.sender, spender, tokens);
         return true;
     }
 
@@ -221,5 +221,34 @@ contract FixedSupplyToken is ERC20Interface, Owned {
     // ------------------------------------------------------------------------
     function transferAnyERC20Token(address tokenAddress, uint tokens) public onlyOwner returns (bool success) {
         return ERC20Interface(tokenAddress).transfer(owner, tokens);
+    }
+}
+
+contract AttendanceCoinMembers is Owned {
+    AttendanceCoin tokenAddress;
+
+    uint public lastID;
+    mapping(uint => address) public addresses;
+    mapping(address => uint) public ids;
+
+    constructor(AttendanceCoin _tokenAddress) public {
+        tokenAddress = _tokenAddress;
+    }
+
+    function enter() public {
+        address _address = msg.sender;
+        require(tokenAddress.balanceOf(_address) > 0);
+        if (ids[_address] == 0){
+            addresses[++lastID] = _address;
+            ids[_address] = lastID;
+        }
+    }
+
+    function exit() public {
+        address _address = msg.sender;
+        if (ids[_address] > 0){
+            addresses[ids[_address]] = 0;
+            ids[_address] = 0;
+        }
     }
 }
