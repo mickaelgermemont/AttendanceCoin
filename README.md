@@ -25,7 +25,7 @@ Subjects for later
 
 # Attendance Coin is Class Cash
 - It's a [ERC20 Token](https://github.com/ConsenSys/Tokens/blob/master/contracts/eip20/EIP20.sol), Fungible
-- Contract available on rinkeby 0x05e710afeebe27972e45f75aca2d16ec2c698f45
+- Contract available on rinkeby 0x05e710afeebe27972e45f75aca2d16ec2c698f45, https://rinkeby.etherscan.io/address/0x05e710afeebe27972e45f75aca2d16ec2c698f45
 - Contract source code, [see](https://github.com/mickaelgermemont/AttendanceCoin/blob/master/contracts/attendancecoin-erc20.sol)
 - Founders pool:
   - sent 333333333 to 0x8fb092b0c5d80d1f4a1a0ff17d5a638afe24cfce
