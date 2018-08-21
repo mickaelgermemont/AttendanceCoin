@@ -97,7 +97,7 @@ contract Owned {
 
 // ----------------------------------------------------------------------------
 // ERC20 Token, with the addition of symbol, name and decimals and a fixed supply
-// also makes addresses iterable (lastId)
+//
 // ----------------------------------------------------------------------------
 contract AttendanceCoin is ERC20Interface, Owned {
     using SafeMath for uint;
@@ -164,7 +164,7 @@ contract AttendanceCoin is ERC20Interface, Owned {
     // ------------------------------------------------------------------------
     function transferFrom(address from, address to, uint tokens) public returns (bool success) {
         balances[from] = balances[from].sub(tokens);
-        allowed[from][to] = allowed[from][to].sub(tokens);
+        allowed[from][msg.sender] = allowed[from][msg.sender].sub(tokens);
         balances[to] = balances[to].add(tokens);
         emit Transfer(from, to, tokens);
         return true;
