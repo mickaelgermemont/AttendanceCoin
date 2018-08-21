@@ -6,6 +6,12 @@ MVP Sucess rules for next week (August 13th 2018)
 - Deploy on testnet
 - Distribution? to people who submitted issue or commented in issues on github? active on the slack also gets rewards?
 
+MVP Sucess rules for next week (August 20th 2018)
+- UI to show coin holders balance
+  - [http://attendance-coin.s3-website-us-east-1.amazonaws.com/](https://github.com/vutsalsinghal/Attendance_Coin)
+  - [http://attendancecoin.mickaelgermemont.com.s3-website-us-east-1.amazonaws.com/](feature_ux_acprofile/attendancecoin-react)
+
+
 Subjects for later
 - How to make it worthwhile to own?
 - Worthwhile because i can show it to employers?
