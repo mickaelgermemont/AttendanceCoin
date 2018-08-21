@@ -11,6 +11,8 @@ MVP Sucess rules for next week (August 20th 2018)
   - [http://attendance-coin.s3-website-us-east-1.amazonaws.com/](https://github.com/vutsalsinghal/Attendance_Coin)
   - [http://attendancecoin.mickaelgermemont.com.s3-website-us-east-1.amazonaws.com/](feature_ux_acprofile/attendancecoin-react)
 
+Lessons learned
+- Metamask would display a balance of 0. we fixed the issue. we learned that when there are 18 decimals, the ERC20 contract behaves like ETH. if you transfer 20. you actually manipulate 20 wei. in order to transfer 20 AC, you have to send 20000000000000000000. 
 
 Subjects for later
 - How to make it worthwhile to own?
