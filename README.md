@@ -13,6 +13,7 @@ MVP Sucess rules for next week (August 20th 2018)
 
 Lessons learned
 - Metamask would display a balance of 0. we fixed the issue. we learned that when there are 18 decimals, the ERC20 contract behaves like ETH. if you transfer 20. you actually manipulate 20 wei. in order to transfer 20 AC, you have to send 20000000000000000000. 
+- Adding features to a deployed contract is not easy. but we can use the following pattern https://dappsforbeginners.wordpress.com/tutorials/interactions-between-contracts/
 
 Subjects for later
 - How to make it worthwhile to own?
