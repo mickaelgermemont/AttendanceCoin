@@ -17,6 +17,7 @@ Lessons learned
 - cant change the contract name. it is not backward compatible.
 
 Subjects for later
+- FAUCET contract for TESTNET. distribute 8AC.
 - How to make it worthwhile to own?
 - Worthwhile because i can show it to employers?
 - Worthwhile because i can use it to attend a meetup even if its full??
