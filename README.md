@@ -29,7 +29,7 @@ Subjects for later
 - It's a [ERC20 Token](https://github.com/ConsenSys/Tokens/blob/master/contracts/eip20/EIP20.sol), Fungible
 - Contract 'FixedSupplyToken' available on rinkeby 0x05e710afeebe27972e45f75aca2d16ec2c698f45 https://rinkeby.etherscan.io/address/0x05e710afeebe27972e45f75aca2d16ec2c698f45
   - [source code](contracts/attendancecoin-erc20.sol)
-- Contract 'AttendanceCoinMembers' lists holders is available on rinkeby 0x35c565088b27a943a76ed5ad3ef981e5a04d222f https://rinkeby.etherscan.io/tx/0x35c565088b27a943a76ed5ad3ef981e5a04d222f
+- Contract 'AttendanceCoinMembers' lists holders is available on rinkeby 0x35c565088b27a943a76ed5ad3ef981e5a04d222f https://rinkeby.etherscan.io/address/0x35c565088b27a943a76ed5ad3ef981e5a04d222f
   - [source code](contracts/attendancecoin-erc20.sol)
 - Founders pool:
   - sent 333333333 to 0x8fb092b0c5d80d1f4a1a0ff17d5a638afe24cfce
