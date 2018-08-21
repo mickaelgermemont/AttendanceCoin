@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and a fixed supply
 //
 // ----------------------------------------------------------------------------
-contract AttendanceCoin is ERC20Interface, Owned {
+contract FixedSupplyToken is ERC20Interface, Owned {
     using SafeMath for uint;
 
     string public symbol;
@@ -225,13 +225,13 @@ contract AttendanceCoin is ERC20Interface, Owned {
 }
 
 contract AttendanceCoinMembers is Owned {
-    AttendanceCoin tokenAddress;
+    FixedSupplyToken tokenAddress;
 
     uint public lastID;
     mapping(uint => address) public addresses;
     mapping(address => uint) public ids;
 
-    constructor(AttendanceCoin _tokenAddress) public {
+    constructor(FixedSupplyToken _tokenAddress) public {
         tokenAddress = _tokenAddress;
     }
 
