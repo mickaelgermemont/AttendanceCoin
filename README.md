@@ -31,9 +31,9 @@ Subjects for later
   - [source code](contracts/attendancecoin-erc20.sol)
 - Contract 'AttendanceCoinMembers' lists holders is available on rinkeby 0x35C565088b27A943a76Ed5aD3Ef981e5A04D222f https://rinkeby.etherscan.io/address/0x35c565088b27a943a76ed5ad3ef981e5a04d222f
   - [source code](https://github.com/mickaelgermemont/AttendanceCoin/blob/feature_lastid/contracts/attendancecoin-erc20.sol#L227-L253)
-- AC faucet is deployed on rinkeby at 0x995fb0043561e95deecec583028be067fb073d1a
-  - At a time, 8 AC will be disbursed. After collecting `8 x 6 = 48 AC`, there will be a cooldown period of 2 days!
-  - [source code](https://github.com/mickaelgermemont/AttendanceCoin/blob/feature_faucet/contracts/attendancecoin-erc20.sol#L256-L291)
+- AC faucet is deployed on rinkeby at 0xbec1ad77ab0dca72224f47bb94ee64a610045c79
+  - At a time, 8 AC will be disbursed. After collecting `8 x 5 = 40 AC`, there will be a cooldown period of 2 days!
+  - [source code](https://github.com/mickaelgermemont/AttendanceCoin/blob/feature_faucet/contracts/attendancecoin-erc20.sol#L256-L306)
 - Founders pool:
   - sent 333333333 to 0x8fb092b0c5d80d1f4a1a0ff17d5a638afe24cfce
   - sent 333333333 to 0x22323121a5ba2bf4d429d64b83c0ef943d760103
