@@ -29,8 +29,8 @@ Subjects for later
 - It's a [ERC20 Token](https://github.com/ConsenSys/Tokens/blob/master/contracts/eip20/EIP20.sol), Fungible
 - Contract 'FixedSupplyToken' available on rinkeby 0x05e710AFeEBE27972e45F75ACA2D16Ec2C698F45 https://rinkeby.etherscan.io/address/0x05e710afeebe27972e45f75aca2d16ec2c698f45
   - [source code](contracts/attendancecoin-erc20.sol)
-- Contract 'AttendanceCoinMembers' lists holders is available on rinkeby 0x35C565088b27A943a76Ed5aD3Ef981e5A04D222f https://rinkeby.etherscan.io/address/0x35c565088b27a943a76ed5ad3ef981e5a04d222f
-  - [source code](https://github.com/mickaelgermemont/AttendanceCoin/blob/feature_lastid/contracts/attendancecoin-erc20.sol#L227-L253)
+- Contract 'AttendanceCoin_Members' lists holders is available on rinkeby 0xc4911c1323d89369503254cef1d3922cf896ecaa https://rinkeby.etherscan.io/address/0xc4911c1323d89369503254cef1d3922cf896ecaa
+  - [source code](https://github.com/mickaelgermemont/AttendanceCoin/blob/feature_lastid/contracts/attendancecoin-erc20.sol#L227-L262)
 - AC faucet is deployed on rinkeby at 0xbec1ad77ab0dca72224f47bb94ee64a610045c79
   - At a time, 8 AC will be disbursed. After collecting `8 x 5 = 40 AC`, there will be a cooldown period of 2 days!
   - [source code](https://github.com/mickaelgermemont/AttendanceCoin/blob/feature_faucet/contracts/attendancecoin-erc20.sol#L256-L306)
