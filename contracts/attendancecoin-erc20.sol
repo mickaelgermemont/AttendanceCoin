@@ -265,13 +265,13 @@ contract AttendanceCoin_Faucet{
         _;
     }
 
-    constructor(FixedSupplyToken _tokenAddress) public {
+    constructor() public {
         owner = msg.sender;
-        tokenAddress = _tokenAddress;
+        tokenAddress = FixedSupplyToken(0x05e710AFeEBE27972e45F75ACA2D16Ec2C698F45);
     }
 
     function getAC() public returns (bool success){
-        if (count[msg.sender] > 5){                     // user is greedy!
+        if (count[msg.sender] > 4){                     // user is greedy!
             if (cool_down[msg.sender] == 0){
                 cool_down[msg.sender] = now + 172800;   // 2 days cooldown!
             }else if (now > cool_down[msg.sender]){
@@ -279,11 +279,25 @@ contract AttendanceCoin_Faucet{
                 cool_down[msg.sender] = 0;
             }
 
+            ++count[msg.sender];
             success = false;
         }else{
             ++count[msg.sender];
-            success = tokenAddress.approve(msg.sender, 8000000000000000000 * count[msg.sender]);
+            success = tokenAddress.approve(msg.sender, 8000000000000000000);
         }
+    }
+
+    function timeLeft() view public returns(uint time){
+        if (now > cool_down[msg.sender]){
+            return 0;
+        }else{
+            return cool_down[msg.sender] - now;
+        }
+    }
+    
+    function resetValues(address _addr) onlyOwner public{
+        count[_addr] = 0;
+        cool_down[_addr] = 0;
     }
 
     function transferAC(address _addr, uint _amt) onlyOwner public returns (bool success){
