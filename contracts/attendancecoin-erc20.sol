@@ -224,15 +224,15 @@ contract FixedSupplyToken is ERC20Interface, Owned {
     }
 }
 
-contract AttendanceCoinMembers is Owned {
+contract AttendanceCoin_Members is Owned {
     FixedSupplyToken tokenAddress;
 
     uint public lastID;
     mapping(uint => address) public addresses;
     mapping(address => uint) public ids;
 
-    constructor(FixedSupplyToken _tokenAddress) public {
-        tokenAddress = _tokenAddress;
+    constructor() public{
+        tokenAddress = FixedSupplyToken(0x05e710AFeEBE27972e45F75ACA2D16Ec2C698F45);
     }
 
     function enter() public {
@@ -249,6 +249,14 @@ contract AttendanceCoinMembers is Owned {
         if (ids[_address] > 0){
             addresses[ids[_address]] = 0;
             ids[_address] = 0;
+        }
+    }
+    
+    function ownerAdds(address _address) onlyOwner public{
+        require(tokenAddress.balanceOf(_address) > 0);
+        if (ids[_address] == 0){
+            addresses[++lastID] = _address;
+            ids[_address] = lastID;
         }
     }
 }
