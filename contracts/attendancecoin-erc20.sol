@@ -224,6 +224,43 @@ contract FixedSupplyToken is ERC20Interface, Owned {
     }
 }
 
+contract AttendanceCoin_Members is Owned {
+    FixedSupplyToken tokenAddress;
+
+    uint public lastID;
+    mapping(uint => address) public addresses;
+    mapping(address => uint) public ids;
+
+    constructor() public{
+        tokenAddress = FixedSupplyToken(0x05e710AFeEBE27972e45F75ACA2D16Ec2C698F45);
+    }
+
+    function enter() public {
+        address _address = msg.sender;
+        require(tokenAddress.balanceOf(_address) > 0);
+        if (ids[_address] == 0){
+            addresses[++lastID] = _address;
+            ids[_address] = lastID;
+        }
+    }
+
+    function exit() public {
+        address _address = msg.sender;
+        if (ids[_address] > 0){
+            addresses[ids[_address]] = 0;
+            ids[_address] = 0;
+        }
+    }
+    
+    function ownerAdds(address _address) onlyOwner public{
+        require(tokenAddress.balanceOf(_address) > 0);
+        if (ids[_address] == 0){
+            addresses[++lastID] = _address;
+            ids[_address] = lastID;
+        }
+    }
+}
+
 contract AttendanceCoin_Faucet is Owned{
     mapping (address => uint) public count;
     mapping (address => uint) public cool_down;
