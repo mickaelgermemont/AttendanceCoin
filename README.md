@@ -12,12 +12,11 @@ MVP Sucess rules for next week (August 20th 2018)
   - [http://attendancecoin.mickaelgermemont.com.s3-website-us-east-1.amazonaws.com/](feature_ux_acprofile/attendancecoin-react)
 
 Lessons learned
-- Metamask would display a balance of 0. we fixed the issue. we learned that when there are 18 decimals, the ERC20 contract behaves like ETH. if you transfer 20. you actually manipulate 20 wei. in order to transfer 20 AC, you have to send 20000000000000000000. 
+- Metamask would display a balance of 0. we fixed the issue. we learned that when there are 18 decimals, the ERC20 contract behaves like ETH. if you transfer 20. you actually manipulate 20 wei. in order to transfer 20 AC, you have to send 20000000000000000000.
 - Adding features to a deployed contract is not easy. but we can use the following pattern https://dappsforbeginners.wordpress.com/tutorials/interactions-between-contracts/
 - cant change the contract name. it is not backward compatible.
 
 Subjects for later
-- FAUCET contract for TESTNET. distribute 8AC.
 - How to make it worthwhile to own?
 - Worthwhile because i can show it to employers?
 - Worthwhile because i can use it to attend a meetup even if its full??
@@ -34,6 +33,9 @@ Subjects for later
 - AC faucet is deployed on rinkeby at 0xbec1ad77ab0dca72224f47bb94ee64a610045c79
   - At a time, 8 AC will be disbursed. After collecting `8 x 5 = 40 AC`, there will be a cooldown period of 2 days!
   - [source code](https://github.com/mickaelgermemont/AttendanceCoin/blob/feature_faucet/contracts/attendancecoin-erc20.sol#L256-L306)
+- another AC faucet is deployed on rinkeby at 0xec3e464c32d99016eb1cf61236724cc73df2c064
+    - free 8 AC as long as it has a balance
+    - [source code](https://github.com/mickaelgermemont/AttendanceCoin/blob/feature_mick_faucet/contracts/faucet.sol)
 - Founders pool:
   - sent 333333333 to 0x8fb092b0c5d80d1f4a1a0ff17d5a638afe24cfce
   - sent 333333333 to 0x22323121a5ba2bf4d429d64b83c0ef943d760103
