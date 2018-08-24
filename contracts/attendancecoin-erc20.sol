@@ -224,46 +224,11 @@ contract FixedSupplyToken is ERC20Interface, Owned {
     }
 }
 
-contract AttendanceCoinMembers is Owned {
-    FixedSupplyToken tokenAddress;
-
-    uint public lastID;
-    mapping(uint => address) public addresses;
-    mapping(address => uint) public ids;
-
-    constructor(FixedSupplyToken _tokenAddress) public {
-        tokenAddress = _tokenAddress;
-    }
-
-    function enter() public {
-        address _address = msg.sender;
-        require(tokenAddress.balanceOf(_address) > 0);
-        if (ids[_address] == 0){
-            addresses[++lastID] = _address;
-            ids[_address] = lastID;
-        }
-    }
-
-    function exit() public {
-        address _address = msg.sender;
-        if (ids[_address] > 0){
-            addresses[ids[_address]] = 0;
-            ids[_address] = 0;
-        }
-    }
-}
-
-contract AttendanceCoin_Faucet{
-    address owner;
+contract AttendanceCoin_Faucet is Owned{
     mapping (address => uint) public count;
     mapping (address => uint) public cool_down;
 
     FixedSupplyToken tokenAddress;
-
-    modifier onlyOwner {
-        require(msg.sender == owner);
-        _;
-    }
 
     constructor() public {
         owner = msg.sender;
@@ -273,7 +238,7 @@ contract AttendanceCoin_Faucet{
     function getAC() public returns (bool success){
         if (count[msg.sender] > 4){                     // user is greedy!
             if (cool_down[msg.sender] == 0){
-                cool_down[msg.sender] = now + 172800;   // 2 days cooldown!
+                cool_down[msg.sender] = now + 2 days;   // 2 days cooldown!
             }else if (now > cool_down[msg.sender]){
                 count[msg.sender] = 0;
                 cool_down[msg.sender] = 0;
@@ -283,7 +248,7 @@ contract AttendanceCoin_Faucet{
             success = false;
         }else{
             ++count[msg.sender];
-            success = tokenAddress.transfer(msg.sender, 8000000000000000000);
+            success = tokenAddress.transfer(msg.sender, 10000000000000000000);
         }
     }
 
@@ -301,6 +266,6 @@ contract AttendanceCoin_Faucet{
     }
 
     function transferAC(address _addr, uint _amt) onlyOwner public returns (bool success){
-        return tokenAddress.approve(_addr, _amt);
+        return tokenAddress.transfer(_addr, _amt);
     }
 }
