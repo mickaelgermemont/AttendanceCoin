@@ -8,7 +8,7 @@ MVP Sucess rules for next week (August 13th 2018)
 
 MVP Sucess rules for next week (August 20th 2018)
 - UI to show coin holders balance
-  - [attendance-coin.s3-website-us-east-1.amazonaws.com](http://attendance-coin.s3-website-us-east-1.amazonaws.com) ([Code](https://github.com/vutsalsinghal/Attendance_Coin))
+  - [vutsalsinghal.github.io/Attendance_Coin](https://vutsalsinghal.github.io/Attendance_Coin/) ([Code](https://github.com/vutsalsinghal/Attendance_Coin))
   - [http://attendancecoin.mickaelgermemont.com.s3-website-us-east-1.amazonaws.com/](feature_ux_acprofile/attendancecoin-react)
 
 Lessons learned
